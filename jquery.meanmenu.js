@@ -1,5 +1,5 @@
 /*!
-* jQuery meanMenu v2.0.8
+* jQuery meanMenu v2.0.8x
 * @Copyright (C) 2012-2014 Chris Wharton @ MeanThemes (https://github.com/meanthemes/meanMenu)
 *
 */
@@ -190,10 +190,10 @@
 												jQuery('.mean-expand').on("click",function(e){
 														e.preventDefault();
 															if (jQuery(this).hasClass("mean-clicked")) {
-																	jQuery(this).text(meanExpand);
+																	jQuery(this).html(meanExpand);
 																jQuery(this).prev('ul').slideUp(300, function(){});
 														} else {
-																jQuery(this).text(meanContract);
+																jQuery(this).html(meanContract);
 																jQuery(this).prev('ul').slideDown(300, function(){});
 														}
 														jQuery(this).toggleClass("mean-clicked");
